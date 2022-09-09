@@ -35,4 +35,4 @@ f4 x y z    | x == y = z
 f5 x y z    | x == y = z
             | x ** y == y = z
             | otherwise = z
-                                                           
+p2 x = x + x                                                           
