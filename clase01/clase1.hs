@@ -1,3 +1,4 @@
+{- HLINT ignore "Use even-}
 
 f6 x y = x * x + y * y
 

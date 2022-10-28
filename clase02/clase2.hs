@@ -1,3 +1,4 @@
+{-HLINT ignore -}
 
 indentidad :: t -> t
 indentidad x = x

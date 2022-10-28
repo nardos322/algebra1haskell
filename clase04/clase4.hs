@@ -1,3 +1,5 @@
+{-# ANN module "HLint: ignore" #-}
+
 sumatoria n | n == 0 = n
             | otherwise = n + sumatoria(n-1)
 

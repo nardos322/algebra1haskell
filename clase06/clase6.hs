@@ -19,6 +19,8 @@
 --pertenece t (x:xs) = t  == (head xs) || pertenece t (tail xs)
 
 -- ejercicios
+{- HLINT ignore -}
+
 
 productoria :: [Int] -> Int
 productoria [] = 1
@@ -33,7 +35,7 @@ sumarN n [] = []
 sumarN n (x:xs) = (n+x) : (sumarN n xs)
 
 
-sumarElPrimero :: [Int] -> [Int]
+
 
 
 

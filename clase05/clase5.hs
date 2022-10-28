@@ -1,5 +1,7 @@
 -- me creo otra funcion para poder resolver sumaDivisores, (creo otro parametro m para poder iterar)
 --                    n      m
+{- HLINT ignore -}
+
 sumaDivisoresHasta :: Int-> Int -> Int
 sumaDivisoresHasta n 0 = 0
 sumaDivisoresHasta n m  | esDivisor m n = m + sumaDivisoresHasta n (m-1)
