@@ -3,6 +3,7 @@ comb n m    | n < m = 0
             | m == 0 = 1
             | otherwise = (comb (n-1) m)  + (comb(n-1) (m-1))
 
+{-faltan correciones-}
 variaciones :: Set Int -> Int -> Set [Int]
 variaciones xs m = agregarLLC(variaciones xs m-1) xs
 
