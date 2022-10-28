@@ -1,4 +1,4 @@
-
+{-# ANN module "HLint: ignore" #-}
 
 sumatoria :: [Int] -> Int
 sumatoria [] = 0

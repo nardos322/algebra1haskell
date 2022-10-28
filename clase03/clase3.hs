@@ -1,3 +1,4 @@
+
 factorial :: Int -> Int
 factorial n | n == 0 = 1
             | n > 0 = n * factorial (n-1)
@@ -26,7 +27,8 @@ parteEntera x   | x < 1 = 0
 -- de 3. No esta permitido utilizar mod ni div
 
 esMultiploDe3 :: Int -> Bool
-esMultiploDe3 n | n == 0 = True
+esMultiploDe3 n | n == 0 = Truefactorial n | n == 0 = 1
+            | n > 0 = n * factorial (n-1)
                 | n == 1 = False
                 | n == 2 = False
                 | n > 2 = esMultiploDe3(n-3)
