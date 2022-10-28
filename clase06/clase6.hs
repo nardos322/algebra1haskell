@@ -1,15 +1,15 @@
 
 
---sumatoria :: [Int] -> Int
---sumatoria [] = 0
---sumatoria xs = head xs + sumatoria (tail + xs)
+sumatoria :: [Int] -> Int
+sumatoria [] = 0
+sumatoria xs = head xs + sumatoria (tail xs)
 
---longitud :: [Int] -> Int
---longitud xs = 1 + longitud(tail xs)
+longitud :: [Int] -> Int
+longitud xs = 1 + longitud(tail xs)
 
---pertenece :: Int -> [Int] -> Bool
---pertenece x [] = False
---pertenece x xs = x == (head xs) || pertenece x (tail xs)
+pertenece :: Int -> [Int] -> Bool
+pertenece x [] = False
+pertenece x xs = x == (head xs) || pertenece x (tail xs)
 
 
 -- usando pattern matching
@@ -32,7 +32,7 @@ productoria (x:xs) = x * (productoria xs)
 
 sumarN :: Int -> [Int] -> [Int]
 sumarN n [] = []
-sumarN n (x:xs) = (n+x) : (sumarN n xs)
+sumarN n (x:xs) = ((n+x) : (sumarN n xs))
 
 
 
