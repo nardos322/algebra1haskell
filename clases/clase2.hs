@@ -1,4 +1,4 @@
-
+module Clase2 where
 {-HLINT ignore -}
 
 identidad :: t -> t

@@ -1,11 +1,12 @@
 {-# ANN module "HLint: ignore" #-}
 
+sumatoria :: Int -> Int
 sumatoria n | n == 0 = n
             | otherwise = n + sumatoria(n-1)
 
 f1 :: Int -> Int
-f1 n| n == 0 = 0  
-    | otherwise = 2^n + f1(n-1)
+f1 n | n == 0 = 1  
+     | otherwise = 2^n + f1(n-1)
 
 
 
@@ -43,3 +44,10 @@ sumaRacionales :: Int -> Int -> Float
 sumaRacionales n 0 = 0
 sumaRacionales n m = (sumaRacionales n (m-1)) + (fromIntegral(sumatoria n))/(fromIntegral m)
             
+f2'::  Int -> Float -> Float
+f2' n q | n == 0 = 0
+        | n > 0 = q^n + f2'(n-1) q
+
+f3' :: Int -> Float -> Float
+f3' n q | n == 0 = 0
+        | n > 0 = q^(2*n) + q^(2*n-1) + f3'(n-1) q     
