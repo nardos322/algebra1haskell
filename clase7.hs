@@ -1,3 +1,5 @@
+{-HLINT ignore-}
+
 type Set a = [a]   --renombramos el tipo de dato lista a Set, hablando de conjuntos
 
 

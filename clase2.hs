@@ -1,3 +1,4 @@
+
 {-HLINT ignore -}
 
 identidad :: t -> t
@@ -52,7 +53,7 @@ p2 x = x + x
 
 tupla :: (Int, Int) 
 tupla = (1, 2)
- 
+
 
 suma :: (Float , Float ) -> (Float , Float ) -> (Float , Float )
 suma v w = (( fst v) + ( fst w ) , ( snd v) + ( snd w))
@@ -109,9 +110,9 @@ sumaTerna x y z = x + y + z
 
 posicPrimerPar :: Int -> Int -> Int -> Int
 posicPrimerPar x y z | mod x 2 == 0 = 1
-                     | mod y 2 == 0 = 2
-                     | mod y 3 == 0 = 3
-                     |otherwise = 4
+                    | mod y 2 == 0 = 2
+                    | mod y 3 == 0 = 3
+                    |otherwise = 4
 
 crearPar :: (Num a, Num b) => a -> b -> (a, b)
 crearPar x y = (x, y)

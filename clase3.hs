@@ -1,8 +1,8 @@
 
 factorial :: Int -> Int
 factorial n | n == 0 = 1
-            | n > 0 = n * factorial (n-1)
-    
+        | n > 0 = n * factorial (n-1)
+
         
 esPar :: Int -> Bool
 esPar n | n == 0 = True
@@ -50,8 +50,8 @@ sumaImpares n   | n == 0 = 0
 
 medioFact :: Int -> Int
 medioFact n | n == 0 = 1
-            | n == 1 = 1
-            | n > 1 = n* medioFact(n-2)
+        | n == 1 = 1
+        | n > 1 = n* medioFact(n-2)
 
 -- Escribir una funcion que determine la suma de dıgitos de un numero positivo. Para esta
 -- funcion pueden utilizar div y mod.
@@ -73,6 +73,13 @@ decena n = unidad(div n 10)
 
 digitosIguales :: Int -> Bool
 digitosIguales n    | n < 10 = True
-                    | n >= 10 = unidad n == decena n && digitosIguales(div n 10)
+                | n >= 10 = unidad n == decena n && digitosIguales(div n 10)
 
-                    
+
+{-
+recursion :: (Int, Int) -> (Int,Int)
+recursion v     | fst v && snd v == 0 = (0, 0)
+                | fst v && snd v > 0 = 1 + recursion()
+-}
+
+
