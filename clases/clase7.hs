@@ -30,7 +30,7 @@ partes n =  partes (n-1) ++ (agregarATodos n (partes (n-1)))
 --Implementacion 0: la que no se ve en clase pero sirve para verificar
 
 cartProd0 :: Set a -> Set b -> Set (a, b)
-cartProd0 x y = [(a,b) | a <- x, b <- y]
+cartProd0 x y = [(a,b) | a <- x, b <- y]esPar x == True = [1,2]
 
 --Implementacion 1: la "fea" que no dieron en clase (doble recursion, reveer temas de doble sumatoria)
 

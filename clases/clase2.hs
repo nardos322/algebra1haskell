@@ -65,6 +65,7 @@ esOrigen (_ , _) = False
 angulo0 :: (Float , Float ) -> Bool
 angulo0 (_ , 0) = True
 angulo0 (_ , _ ) = False
+pares:: [Int] -> [Int]
 
 angulo45 :: (Float , Float ) -> Bool
 angulo45 (x , y) = x == y
